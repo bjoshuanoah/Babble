@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Babble",
+    "description": "Chat with friends in other languages."
+  },
+  "appDesc": {
+    "message": "This extension allows users in almost 60 languages to user Google Chat to talk to each-other in their own mother tongue. Babble takes care of the rest with Google Translate", 
+    "description":"Chrome's Premier Chat Translator."
+  }
+}
