@@ -28,7 +28,7 @@ setTimeout(function(){
 	}
 },2000);
 
-var translateThis = function(text, elem, incoming_language){
+var translateThis = function(text, elem, incoming_language){ 
 	if (incoming_language == null){
 		var incoming_language = 'en';
 	}
