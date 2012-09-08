@@ -56,11 +56,13 @@ div[role="dialog"]{
 		}
 		.incoming_language_container{
 		    display: none;
-		    position: absolute;
-		    margin-top: -370px;
-		    width: 440px;
+		    position: fixed;
+		    bottom:30px;
+		    right:5%;
+		    left:5%;
+		    box-sizing:border-box;
+		    width:90%;
 		    height: 310px;
-		    margin-left: -270px;
 		    -webkit-column-count: 4;
 		    background: rgba(255,255,255,.95);
 		    border:1px solid #999;

@@ -1,193 +1,194 @@
-<div class="container">
+
+<div class="incoming_language_container">
 	<div class="incoming_lang first" id="en">
-		English
-	</div>
+		They are speaking English
+		</div>
 	<div class="incoming_lang" id="sq">
-		Albanian
-	</div>
+		They are speaking Albanian
+		</div>
 	<div class="incoming_lang" id="ar">
-		Arabic
-	</div>
+		They are speaking Arabic
+		</div>
 	<div class="incoming_lang" id="hy">
-		Armenian
-	</div>
+		They are speaking Armenian
+		</div>
 	<div class="incoming_lang" id="az">
-		Azerbaijani
-	</div>
+		They are speaking Azerbaijani
+		</div>
 	<div class="incoming_lang" id="eu">
-		Basque
- 	</div>
+		They are speaking Basque
+ 		</div>
 	<div class="incoming_lang" id="be">
-		Belarusian
- 	</div>
+		They are speaking Belarusian
+ 		</div>
 	<div class="incoming_lang" id="bn">
-		Bengali
- 	</div>
+		They are speaking Bengali
+ 		</div>
 	<div class="incoming_lang" id="bg">
-		Bulgarian
+		They are speaking Bulgarian
  		</div>
 	<div class="incoming_lang" id="ca">
-		Catalan
+		They are speaking Catalan
  		</div>
 	<div class="incoming_lang" id="zh-CN">
-		Simplified Chinese
+		They are speaking Simplified Chinese
  		</div>
 	<div class="incoming_lang" id="zh-TW">
-		Traditional
+		They are speaking Traditional Chinese
  		</div>
 	<div class="incoming_lang" id="hr">
-		Croatian
+		They are speaking Croatian
  		</div>
 	<div class="incoming_lang" id="cs">
-		Czech
+		They are speaking Czech
  		</div>
 	<div class="incoming_lang" id="da">
-		Danish
+		They are speaking Danish
  		</div>
 	<div class="incoming_lang" id="nl">
-		Dutch
+		They are speaking Dutch
  		</div>
 	<div class="incoming_lang" id="eo">
-		Eperanto
+		They are speaking Eperanto
  		</div>
 	<div class="incoming_lang" id="et">
-		Estonian
+		They are speaking Estonian
  		</div>
 	<div class="incoming_lang" id="tl">
-		Filipino
+		They are speaking Filipino
  		</div>
 	<div class="incoming_lang" id="fi">
-		Finnish
+		They are speaking Finnish
  		</div>
 	<div class="incoming_lang" id="fr">
-		French
+		They are speaking French
  		</div>
 	<div class="incoming_lang" id="gl">
-		Galacian
+		They are speaking Galacian
  		</div>
 	<div class="incoming_lang" id="ka">
-		Georgian
+		They are speaking Georgian
  		</div>
 	<div class="incoming_lang" id="de">
-		German
+		They are speaking German
  		</div>
 	<div class="incoming_lang" id="el">
-		Greek
+		They are speaking Greek
  		</div>
 	<div class="incoming_lang" id="gu">
-		Gujarati
+		They are speaking Gujarati
  		</div>
 	<div class="incoming_lang" id="ht">
-		Haitian Creole
+		They are speaking Haitian Creole
  		</div>
 	<div class="incoming_lang" id="iw">
-		Hebrew
+		They are speaking Hebrew
  		</div>
 	<div class="incoming_lang" id="hi">
-		Hindi
+		They are speaking Hindi
  		</div>
 	<div class="incoming_lang" id="hu">
-		Hungarian
+		They are speaking Hungarian
  		</div>
 	<div class="incoming_lang" id="is">
-		Icelandic
+		They are speaking Icelandic
  		</div>
 	<div class="incoming_lang" id="ga">
-		Irish
+		They are speaking Irish
  		</div>
 	<div class="incoming_lang" id="it">
-		Italian
+		They are speaking Italian
  		</div>
 	<div class="incoming_lang" id="ja">
-		Japanese
+		They are speaking Japanese
  		</div>
 	<div class="incoming_lang" id="kn">
-		Kannada
+		They are speaking Kannada
  		</div>
 	<div class="incoming_lang" id="ko">
-		Korean
+		They are speaking Korean
  		</div>
 	<div class="incoming_lang" id="la">
-		Latin
+		They are speaking Latin
  		</div>
 	<div class="incoming_lang" id="lv">
-		Latvian
+		They are speaking Latvian
  		</div>
 	<div class="incoming_lang" id="lt">
-		Lithuanian
+		They are speaking Lithuanian
  		</div>
 	<div class="incoming_lang" id="mk">
-		Macedonian
+		They are speaking Macedonian
  		</div>
 	<div class="incoming_lang" id="ms">
-		Malay
+		They are speaking Malay
  		</div>
 	<div class="incoming_lang" id="mt">
-		Maltese
+		They are speaking Maltese
  		</div>
 	<div class="incoming_lang" id="no">
-		Norwegian
+		They are speaking Norwegian
  		</div>
 	<div class="incoming_lang" id="fa">
-		Persian
+		They are speaking Persian
  		</div>
 	<div class="incoming_lang" id="pl">
-		Polish
+		They are speaking Polish
  		</div>
 	<div class="incoming_lang" id="pt-BR">
-		Portuguese
+		They are speaking Portuguese
  		</div>
 	<div class="incoming_lang" id="ro">
-		Romanian
+		They are speaking Romanian
  		</div>
 	<div class="incoming_lang" id="ru">
-		Russian
+		They are speaking Russian
  		</div>
 	<div class="incoming_lang" id="sr">
-		Serbian
+		They are speaking Serbian
  		</div>
 	<div class="incoming_lang" id="sk">
-		Slovak
+		They are speaking Slovak
  		</div>
 	<div class="incoming_lang" id="sl">
-		Slovenian
+		They are speaking Slovenian
  		</div>
 	<div class="incoming_lang" id="es">
-		Spanish
+		They are speaking Spanish
  		</div>
 	<div class="incoming_lang" id="sw">
-		Swahili
+		They are speaking Swahili
  		</div>
 	<div class="incoming_lang" id="sv">
-		Swedish
+		They are speaking Swedish
  		</div>
 	<div class="incoming_lang" id="ta">
-		Tamil
+		They are speaking Tamil
  		</div>
 	<div class="incoming_lang" id="te">
-		Telugu
+		They are speaking Telugu
  		</div>
 	<div class="incoming_lang" id="th">
-		Thai
+		They are speaking Thai
  		</div>
 	<div class="incoming_lang" id="tr">
-		Turkish
+		They are speaking Turkish
  		</div>
 	<div class="incoming_lang" id="uk">
-		Ukrainian
+		They are speaking Ukrainian
  		</div>
 	<div class="incoming_lang" id="ur">
-		Urdu
+		They are speaking Urdu
  		</div>
 	<div class="incoming_lang" id="vi">
-		Vietnamese
+		They are speaking Vietnamese
  		</div>
 	<div class="incoming_lang" id="cy">
-		Welsh
+		They are speaking Welsh
  		</div>
 	<div class="incoming_lang" id="yi">
-		Yiddish
+		They are speaking Yiddish
  		</div>
 </div>
 
-<div class="container"> <div class="incoming_lang first" id="en"> English </div> <div class="incoming_lang" id="sq"> Albanian </div> <div class="incoming_lang" id="ar"> Arabic </div> <div class="incoming_lang" id="hy"> Armenian </div> <div class="incoming_lang" id="az"> Azerbaijani </div> <div class="incoming_lang" id="eu"> Basque </div> <div class="incoming_lang" id="be"> Belarusian </div> <div class="incoming_lang" id="bn"> Bengali </div> <div class="incoming_lang" id="bg"> Bulgarian </div> <div class="incoming_lang" id="ca"> Catalan </div> <div class="incoming_lang" id="zh-CN"> Simplified Chinese </div> <div class="incoming_lang" id="zh-TW"> Traditional </div> <div class="incoming_lang" id="hr"> Croatian </div> <div class="incoming_lang" id="cs"> Czech </div> <div class="incoming_lang" id="da"> Danish </div> <div class="incoming_lang" id="nl"> Dutch </div> <div class="incoming_lang" id="eo"> Eperanto </div> <div class="incoming_lang" id="et"> Estonian </div> <div class="incoming_lang" id="tl"> Filipino </div> <div class="incoming_lang" id="fi"> Finnish </div> <div class="incoming_lang" id="fr"> French </div> <div class="incoming_lang" id="gl"> Galacian </div> <div class="incoming_lang" id="ka"> Georgian </div> <div class="incoming_lang" id="de"> German </div> <div class="incoming_lang" id="el"> Greek </div> <div class="incoming_lang" id="gu"> Gujarati </div> <div class="incoming_lang" id="ht"> Haitian Creole </div> <div class="incoming_lang" id="iw"> Hebrew </div> <div class="incoming_lang" id="hi"> Hindi </div> <div class="incoming_lang" id="hu"> Hungarian </div> <div class="incoming_lang" id="is"> Icelandic </div> <div class="incoming_lang" id="ga"> Irish </div> <div class="incoming_lang" id="it"> Italian </div> <div class="incoming_lang" id="ja"> Japanese </div> <div class="incoming_lang" id="kn"> Kannada </div> <div class="incoming_lang" id="ko"> Korean </div> <div class="incoming_lang" id="la"> Latin </div> <div class="incoming_lang" id="lv"> Latvian </div> <div class="incoming_lang" id="lt"> Lithuanian </div> <div class="incoming_lang" id="mk"> Macedonian </div> <div class="incoming_lang" id="ms"> Malay </div> <div class="incoming_lang" id="mt"> Maltese </div> <div class="incoming_lang" id="no"> Norwegian </div> <div class="incoming_lang" id="fa"> Persian </div> <div class="incoming_lang" id="pl"> Polish </div> <div class="incoming_lang" id="pt-BR"> Portuguese </div> <div class="incoming_lang" id="ro"> Romanian </div> <div class="incoming_lang" id="ru"> Russian </div> <div class="incoming_lang" id="sr"> Serbian </div> <div class="incoming_lang" id="sk"> Slovak </div> <div class="incoming_lang" id="sl"> Slovenian </div> <div class="incoming_lang" id="es"> Spanish </div> <div class="incoming_lang" id="sw"> Swahili </div> <div class="incoming_lang" id="sv"> Swedish </div> <div class="incoming_lang" id="ta"> Tamil </div> <div class="incoming_lang" id="te"> Telugu </div> <div class="incoming_lang" id="th"> Thai </div> <div class="incoming_lang" id="tr"> Turkish </div> <div class="incoming_lang" id="uk"> Ukrainian </div> <div class="incoming_lang" id="ur"> Urdu </div> <div class="incoming_lang" id="vi"> Vietnamese </div> <div class="incoming_lang" id="cy"> Welsh </div> <div class="incoming_lang" id="yi"> Yiddish </div> </div>
+
