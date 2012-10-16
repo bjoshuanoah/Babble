@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Share One Get One | <?=$page;?> </title>
+<meta charset="utf-8">
+<link href="assets/css/style.css" type="text/css" rel="stylesheet">
+<script src="js/main.js"></script>
+</head>
+<body id="<?=$page;?>">
+    <header id="head">
+		<div class="row">
+			<div id="share1" class="three columns"><img id="share" src="assets/images/share.png" width="100" height="57" /></div>
+			<div id="logo1" class="two columns"><img id="logo" src="assets/images/logo.png" width="99" height="50" alt="logo" /></div>
+		</div>
+	</header>
+
+	<div id="maincontent" class="row">
+		<div class="row">
+			<section class="info eight columns">
+				<h1>Share One Get One</h1>
+				<p><?=$campaign->campaign_about;?></p>
+			</section>
+
+			<section class="promoImage five columns">
+				<img src="<?=base_url();?>/assets/images/iceCreamCup.png">
+
+			</section>
+			<?php if($page == 'home'): ?>
+			<section class="promoAction">
+				<span class="promoButton"><?=$campaign->campaign_offer;?></span>
+			</section> 
+			<?php endif; ?>
+
+		</div>
+		<?php if($page == 'home'): ?>
+		<div id="recentSupporters" class="row">
+			<div class="sixteen columns centered">
+			<h3>Recent Supporters</h3>
+			
+				<?php foreach ($last_six as $i => $username): ?>
+					<div class="supportContainer">
+						<div class="rounded-crop">
+						      <img src="http://graph.facebook.com/<?=$username->username;?>/picture?type=large" title="<?=$username->fname." ".$username->lname; ?>" alt="<?=$username->fname." ".$username->lname; ?>">
+						</div>
+						<span <?=$username->fname." ".$username->lname; ?></span>
+					</div>
+					<?php endforeach; ?>
+			</div>
+		</div>
+		<?php endif; ?>
+	</div>
+	<footer class="content">
+		<div id="footercontainer" class="row">
+			<div class="twelve columns">
+			<?php if($page != 'coupon'): ?>
+				<?php if($page == 'likes'): ?>
+				<div class="row">
+					<h2>Show Your Support!</h2>
+					<span>Connect with both <?=$campaign->company_name;?> and <?=$campaign->charity_name;?></span>
+				</div>
+				<?php endif; ?>
+				
+				<section class="company six columns">
+					<img id="company" src="<?=base_url();?>/assets/images/companyL.png" width="179" height="86" alt="<?=$campaign->company_name;?>">
+
+					<article>
+						<h2>About <?=$campaign->company_name;?></h2>
+						<p><?=$campaign->company_about;?></p>
+					</article>
+
+					<div class="socials">
+						<?php if($page == 'home'): ?>
+						<h3><?=$campaign->company_name;?>'s Links</h3>
+						<p><a href="<?=$campaign->company_website;?>" class="website"></a>
+						<a href="<?=$campaign->company_facebook;?>" class="facebook"></a>
+						<a href="<?=$campaign->company_twitter;?>" class="twitter"></a></p>
+						<?php else:?>
+							<?php if( ! $company_is_liked): ?>
+							<div class="fb-like" id="facebookLikeButton_left" data-href="https://www.facebook.com/pages/Golden-Spoon-Frozen-Yogurt/130461989105" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+							<?php else: ?>
+							<div id="checkmark_left"><img src="<?=base_url();?>assets/images/checkmark.png" width="93" height="100" alt="checkmark"></div>
+							<?php endif; ?>
+						<?php endif; ?>
+					</div>
+				</section>
+
+				<section class="charity six columns">
+						<img id="charity" src="<?=base_url();?>/assets/images/charityL.png" width="179" height="86" alt="?=$campaign->charity_name;?>">
+
+					<article>
+						<h2>About <?=$campaign->charity_name;?></h2>
+						<p><?=$campaign->charity_about;?></p>
+					</article>
+
+					<div class="socials">
+						<?php if($page == 'home'): ?>
+						<h3><?=$campaign->charity_name;?>'s Links</h3>
+						<p><a href="<?=$campaign->charity_website;?>" class="website"></a>
+						<a href="<?=$campaign->charity_facebook;?>" class="facebook"></a>
+						<a href="<?=$campaign->charity_twitter;?>" class="twitter"></a></p>
+						<?php else: ?>
+							<?php if( ! $charity_is_liked): ?>
+							<div class="fb-like" id="facebookLikeButton_right" data-href="https://www.facebook.com/chelseaslight?fref=ts" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+							<?php else: ?>
+							<div id="checkmark_right"><img src="<?=base_url();?>assets/images/checkmark.png" width="93" height="100" alt="checkmark"></div>
+							<?php endif; ?>
+						<?php endif; ?>
+					</div>
+				</section>
+
+				<?php if($page == 'likes'):?>
+				<span id ="shareHover">share button here</div>
+				<?php endif; ?>	
+			
+			<?php else: ?>
+				<div class="six columns">
+					<div id="info" class="row">
+					<div class="four columns">
+						<span class="icon-checkslice"></span>
+						<!-- <img src="<?=base_url();?>assets/images/checkslice.png" width="86" height="101"> -->
+					</div>
+					<div class="twelve columns">
+					<section>
+						<h2>Congratulations!</h2>
+						<span>You SOGO coupon has been emailed to <?=$email;?></span>
+					</section>
+					</div>
+					</div>
+
+					<div id="info" class="row">
+						<span><span class="icon-print"></span> you can also <span id="print">print your coupon</span> here</span>
+					</div>
+
+					<div id="info" class="row">
+						<h3>Keep Sharing!</h3>
+						<span>The more you share, the more you help <?=$campaign->charity_name;?>.</span>
+						<div class="keepSharing">
+							<span class='st_facebook_vcount' displayText='Facebook'></span>
+						    <span class='st_pinterest_vcount' displayText='Pinterest'></span>
+						    <span class='st_twitter_vcount' displayText='Tweet'></span>
+						    <span class='st_linkedin_vcount' displayText='LinkedIn'></span>
+						    <span class='st_email_vcount' displayText='Email'></span>
+						</div>
+					</div>
+
+					<div id="info" class="row">
+						
+						<h4>Did your email not arrive?</h4>
+						<span>Add <span id="faux_anchor">coupons@share1getone.com</span> to your address book.</span>
+						<span><span class="icon-email"></span><a href="<?=base_url();?><?=$campaign->campaign_uri;?>/resend">Resend My Coupon</a></span>
+					</div>
+
+					<div id="info" class="row">
+						<span id="redeemCoupon"><span class="icon-bonus"></span>Redeem this coupon and <?=$campaign->company_name;?> will donate $1 to <?=$campaign->charity_name;?>.</span>
+					</div>
+
+
+
+				</div>
+				
+				<div id="phone" class="six columns">
+					<div id="phoneInfo" class="row">
+						
+					<section class="phoneText">
+						Your SOGO redemption code for a FREE Spoonful (1/2) cup.
+					</section>
+					<section class="phoneImages">
+						<img class="company" src="<?=base_url();?>assets/images/companyPhone.jpg" width="59" height="29">
+						<img class="charity" src="<?=base_url();?>assets/images/companyPhone.jpg" width="59" height="29">
+					</section>
+					</div>
+				</div>
+			<?php endif; ?>
+
+			</div>
+
+			<div class="four columns">
+				<?php if($page != "coupon"): ?>
+				<section class="supporters">
+					<h2>Recent Supporters</h2>
+					<?php foreach ($last_supporters as $i => $username): ?>
+				<div class="supporters"><img src="http://graph.facebook.com/<?=$username->username;?>/picture" title="<?=$username->fname." ".$username->lname; ?>" alt="<?=$username->fname." ".$username->lname; ?>" style="vertical-align: middle; margin-right: 5px;"><span><?=$username->fname." ".$username->lname; ?></span></div>
+	               <?php endforeach; ?>
+
+				</section>
+				<?php else: ?>
+				<img id="charityLogo" src="<?=base_url();?>assets/images/charityCropped.png" />
+				<img id="companyLogo" src="<?=base_url();?>assets/images/companyCropped.png" />
+				<?php endif;?>
+
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
