@@ -19,55 +19,57 @@ $('body').append(translator_settings_overlay);
 
 setTimeout(function(){
 	$('#en.lang_cont').addClass('active');
-	if ($.cookie('translator_viewed') == undefined){
+	if ($.cookie('translator_viewed') === undefined) {
 		$('.translator_settings_overlay').fadeIn(800);
-	} else if ($.cookie('translator_language') != undefined){
+	} else if ($.cookie('translator_language') !== undefined) {
 		$('#en.lang_cont').removeClass('active');
 		var language = $.cookie('translator_language');
 		$('#'+language+'.lang_cont').addClass('active').prevAll('.lang_cont').addClass('prev');
 	}
 },2000);
 
-var translateThis = function(text, elem, incoming_language){ 
-	if (incoming_language == null){
+var translateThis = function (text, elem, incoming_language) {
+	if  (incoming_language === null) {
 		var incoming_language = 'en';
 	}
-	if ($.cookie('translator_language') == undefined){
+	if  ($.cookie('translator_language') === undefined) {
 		var language = 'en';
 	} else {
 		var language = $.cookie('translator_language');
 		var query = 'http://mymemory.translated.net/api/get?q='+text+'&langpair='+incoming_language+'|'+language+'&de=brianjoshuanoah@gmail.com';
-		if (incoming_language != language){
+		if (incoming_language != language) {
 			$.ajax({
-	            url: query,
-	            type: 'GET',
-	            dataType: 'json',
-	            success: function(s) { 
-	            	var translation = s['responseData']['translatedText'];
-	            	elem.text(translation).addClass('translated');
-	            },
-	            error: function(e) { console.log('something went wrong!', e)}
-	        });
+                            	            url: query,
+                            	            type: 'GET',
+                            	            dataType: 'json',
+                            	            success: function(s) {
+                            	                         var translation = s['responseData']['translatedText'];
+                                                                elem.text(translation).addClass('translated');
+                            	            },
+                            	            error: function(e) {
+                                                        console.log('something went wrong!', e);
+                                                 }
+                        	             });
 		}
 	}
-}
+};
 
-setInterval(function(){
+setInterval (function () {
 	$('div[role="dialog"]').each(function(){
 		var this_chat_box = $(this);
 		var incoming_language = this_chat_box.attr('data-language');
-		
+
 		if (this_chat_box.hasClass('trans_added')){
 			if(this_chat_box.hasClass('translate_this')){
-				
+
 				this_chat_box.find('.km[chat-dir="t"] .kk span:not(.kn)').each(function(){
 					var to_be_translated = $(this);
-					
+
 
 					if (to_be_translated.hasClass('translated')){
 					} else {
 						var text = to_be_translated.text();
-						translateThis(text, to_be_translated, incoming_language)
+						translateThis(text, to_be_translated, incoming_language);
 					}
 				});
 				this_chat_box.find('.km[chat-dir="t"] .kl').each(function(){
@@ -75,14 +77,14 @@ setInterval(function(){
 					if (to_be_translated.hasClass('translated')){
 					} else {
 						var text = to_be_translated.text();
-						translateThis(text, to_be_translated, incoming_language)
+						translateThis(text, to_be_translated, incoming_language);
 					}
 				});
 			}
 		} else {
 			this_chat_box.addClass('trans_added').children('.nH:not(.Hy)').append(translator_switch);
 			setTimeout(function(){
-				
+
 				var a = $('.translate_this_chat');
 				var a_text = a.text();
 				var b = $('.translator_setting_switch');

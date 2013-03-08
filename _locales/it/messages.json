@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Babble",
+    "description": "Chatta con gli amici la loro lingua"
+  },
+  "appDesc": {
+    "message": "Babble è una semplice estensione per Google la chat da utilizzare in Gmail. Approfittate della base di conoscenza vasta che Internet ha da offrire. Chatta con tua nonna, o nipote per la prima volta nella loro lingua, e la tua. Parlare con un nuovo amico, o di un nuovo partner commerciale. Questa estensione è stata costruita per tutti. La maggior parte delle lingue supportate. Limitare 2500 traduzione per utente al giorno, e una chat alla volta. Per ulteriori traduzioni, e chat multiple, la Business Edition (coming soon!) Soddisfa le tue esigenze. Spero davvero che ti piace questo.",
+     "description":"Chrome's Premier Chat Translator."
+  }
+}

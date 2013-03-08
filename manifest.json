@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Babble",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Chat in your language with friends in their language",
   "default_locale": "en",
   "icons": {
@@ -9,7 +9,7 @@
   	"48": "img/icon48.png",
   	"128": "img/icon128.png"
   },
-  
+
   "content_scripts":[
     {
     	"matches": ["http://mail.google.com/*", "https://mail.google.com/*"],
